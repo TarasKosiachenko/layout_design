@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
     <title>Layout Design</title>
   </head>
@@ -19,7 +20,7 @@
       <div class="opacity"></div>
       <div class="header__body">
         <h1 class="header__logo">Portofolio</h1>
-        <h2>Hi, It's Théophile Seyrig</h2>
+        <h3>Hi, It's Théophile Seyrig</h3>
         <p>Designer from Porto, Portugal</p>
         <p>Latest works</p>
 
@@ -38,7 +39,137 @@
       </div>
     </header>
 
-    <section></section>
+    <main>
+      <section class="about">
+        <div class="about-body">
+          <h2 class="about-head cetner-head">About</h2>
+          <p>
+            Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero
+            phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in
+            rutrum augue. Pellentesque senectus risus consectetur et sed purus
+            sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla
+            egestas odio pharetra egestas aliquet mollis.
+          </p>
+          <p>
+            Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam
+            penatibus aliquet tellus, in rutrum augue. Pellentesque senectus
+            risus consectetur et sed purus sed. Consectetur adipiscing elit.
+            Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet
+            mollis. diam penatibus aliquet tellus, in rutrum augue.
+            Pellentesque.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills-body">
+          <h2 class="skills-head cetner-head">Skills</h2>
+          <img src="./img/Profile-Picture.png" alt="profile" />
+
+          <ul class="skills-list">
+            <li>
+              <h2>Profile</h2>
+              <p>UI / UX Engineer, Front-end Developer</p>
+            </li>
+            <li>
+              <h2>Front-end Dev</h2>
+              <div class="meter">
+                <span style="width: 65%"></span>
+              </div>
+            </li>
+            <li class="skills-tools">
+              <h2>Tools</h2>
+              <p>HTML, CSS, JS, Bootstrap, React</p>
+            </li>
+            <li>
+              <h2>UI Design</h2>
+              <div class="meter">
+                <span style="width: 80%"></span>
+              </div>
+            </li>
+            <li class="skills-tools">
+              <h2>Tools:</h2>
+              <p>Adobe PS, AI, XD, Figma, InVision</p>
+            </li>
+            <li>
+              <h2>UX Research</h2>
+              <div class="meter">
+                <span style="width: 87%"></span>
+              </div>
+            </li>
+            <li class="skills-tools">
+              <h2>Tools:</h2>
+              <p>Paper, Pen, Balsamiq</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="portfolio-body">
+          <div class="portfolio-left">
+            <h2 class="portfolio-head cetner-head">Portfolio</h2>
+            <h3>UX Research</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum
+              nibh nam odio cursus id. Diam massa semper a tincidunt cursus
+              ultricies lectus eget urna.
+            </p>
+          </div>
+          <div class="portfolio-right">
+            <div class="gallery">
+              <figure class="gallery__item gallery__item_1">
+                <img src="./img/grid1.png" class="gallery__img" alt="Image 1" />
+              </figure>
+              <figure class="gallery__item gallery__item_2">
+                <img src="./img/grid2.png" class="gallery__img" alt="Image 2" />
+              </figure>
+              <figure class="gallery__item gallery__item_3">
+                <img src="./img/grid3.png" class="gallery__img" alt="Image 3" />
+              </figure>
+              <figure class="gallery__item gallery__item_4">
+                <img src="./img/grid4.png" class="gallery__img" alt="Image 4" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-body">
+        <div class="footer-left">
+          <h2 class="footer-head cetner-head">Get in Touch</h2>
+          <ul class="footer-list">
+            <li><p>Dribbble</p></li>
+            <li><p>Behance</p></li>
+            <li><p>CodePen</p></li>
+            <li><p>GitHub</p></li>
+            <li><p>Medium</p></li>
+            <li><p>LinkedIn</p></li>
+            <li><p>Facebook</p></li>
+            <li><p>Instagram</p></li>
+            <li><p>Twitter</p></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p>seyrig@mailme.com</p>
+          <p>+ 55 6645 665544</p>
+          <span>
+            <svg
+              width="24"
+              height="14"
+              viewBox="0 0 24 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.9102 13.9648L12 3.06641L1.08984 13.9648L0.0351562 12.9102L12 0.933594L23.9648 12.9102L22.9102 13.9648Z"
+                fill="#333333"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </footer>
 
     <script src="./main.js"></script>
   </body>

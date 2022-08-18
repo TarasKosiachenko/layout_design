@@ -3,10 +3,11 @@
   padding: 0;
   font-family: "Libre Franklin", sans-serif;
 }
-h1 {
-  font-weight: 700;
+h2 {
+  font-weight: 600;
 }
-p, li {
+p,
+li {
   font-weight: 400;
 }
 
@@ -14,7 +15,7 @@ p, li {
   height: 205px;
   padding: 35px;
   background-image: url(./img/bg-header.png);
-  background-position: center;
+  background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -36,10 +37,11 @@ p, li {
   height: 100%;
 }
 .header__logo {
+  font-weight: 700;
   font-size: 24px;
   padding-bottom: 51px;
 }
-.header__body h2 {
+.header__body h3 {
   font-weight: 400;
   font-size: 20px;
   padding-bottom: 13px;
@@ -164,7 +166,7 @@ p, li {
   .header__menu {
     position: absolute;
     top: 0;
-    right: 0 ;
+    right: 0;
     left: auto;
     width: 47.5%;
     min-width: 370px;
@@ -177,16 +179,22 @@ p, li {
     font-size: 18px;
     cursor: pointer;
   }
-  .header__body h1,
-  h2,
-  p {
+  .header__body h1 {
+    width: max-content;
+    margin: 0 !important;
+  }
+  .header__body h3 {
+    width: max-content;
+    margin: 0 !important;
+  }
+  .header__body p {
     width: max-content;
     margin: 0 !important;
   }
   .header__logo {
     padding-bottom: 145px;
   }
-  .header__body h2 {
+  .header__body h3 {
     font-size: 4.4vw;
     padding-bottom: 26px;
   }
@@ -198,4 +206,197 @@ p, li {
     font-size: 18px;
     height: 20px;
   }
+}
+
+main {
+  color: #333;
+}
+
+/* /////////// */
+.cetner-head {
+  text-align: center;
+}
+.about-body {
+  padding: 25px 33px;
+}
+.about-head {
+  padding-bottom: 20px;
+}
+.about-body p {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: justify;
+}
+.about-body p:first-of-type {
+  padding-bottom: 13px;
+}
+
+/* /////////// */
+
+.skills {
+  background: #fffaf2;
+}
+.skills-body {
+  padding: 25px 35px 4px;
+}
+.skills-head {
+  padding-bottom: 25px;
+}
+.skills-body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 28px;
+}
+
+.skills-list {
+  width: 100%;
+  max-width: 635px;
+  margin: auto;
+}
+.skills-list li:first-of-type {
+  padding-bottom: 30px;
+}
+.skills-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.skills-list .skills-tools {
+  padding-bottom: 18px;
+}
+.skills-list h2 {
+  font-size: 12px;
+  line-height: 25px;
+}
+.skills-list p {
+  font-size: 12px;
+  line-height: 25px;
+  width: 69%;
+}
+.meter {
+  height: 18px;
+  background: #f5d6ab;
+  width: 69%;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: #c66c49;
+}
+
+/* /////////// */
+
+.portfolio-body {
+  padding: 25px 35px 22px;
+}
+.portfolio-left {
+  text-align: center;
+}
+.portfolio-head {
+  padding-bottom: 20px;
+}
+.portfolio-left h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  padding-bottom: 15px;
+}
+.portfolio-left p {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  padding-bottom: 26px;
+}
+.portfolio-right {
+  width: 100%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1px);
+    grid-template-rows: repeat(15, 1px);
+    grid-gap: 13px;
+    margin: auto;
+    max-width: 350px;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__item_1 {
+  grid-column-start: 1;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+.gallery__item_2 {
+  grid-column-start: 14;
+  grid-column-end: 24;
+  grid-row-start: 1;
+  grid-row-end: 10;
+}
+.gallery__item_3 {
+  grid-column-start: 1;
+    grid-column-end: 14;
+    grid-row-start: 7;
+    grid-row-end: 16;
+}
+.gallery__item_4 {
+  grid-column-start: 14;
+  grid-column-end: 24;
+  grid-row-start: 10;
+  grid-row-end: 16;
+}
+
+/* //////// */
+
+.footer-body {
+  padding: 25px 35px 7px;
+  background: #fffaf2;
+}
+.footer-head {
+  padding-bottom: 25px;
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 180px;
+}
+.footer-list li {
+  padding-bottom: 19px;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 93px 0 7px;
+}
+.footer-right {
+  position: relative;
+  padding: 11px 7px;
+}
+.footer-right p:first-of-type {
+  font-size: 14px;
+}
+.footer-right p {
+  line-height: 17px;
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+.footer-right span {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+
+
+@media (min-width: 872px) {
+  .cetner-head {
+    text-align: left;
+  }
+  .about-body {
+    padding: 90px 165px;
+  }
+
 }
