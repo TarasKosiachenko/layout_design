@@ -172,7 +172,7 @@ body.lock {
   }
 }
 
-@media (min-width: 872px) {
+@media (min-width: 768px) {
   h2 {
     font-weight: 700;
   }
@@ -387,6 +387,7 @@ main {
 }
 .portfolio-gallery img {
   padding-bottom: 12px;
+  width: 100%;
 }
 /* //////// */
 
@@ -451,7 +452,7 @@ main {
 }
 
 
-@media (min-width: 1150px) {
+@media (min-width: 768px) {
   .content-desktop {
     display: flex;
     justify-content: space-between;
@@ -536,7 +537,7 @@ main {
   }
 
   .portfolio-left {
-    max-width: 350px;
+    width: 32%;
     text-align: left;
     margin-left: 4px;
     padding-right: 50px;
@@ -567,6 +568,7 @@ main {
 
   .portfolio-right {
     width: 60%;
+    margin: 0;
     padding-top: 68px;
     max-width: 632px;
   }
@@ -581,6 +583,7 @@ main {
   }
   .portfolio-gallery img {
     padding-bottom: 26px;
+    width: 100%;
   }
 
   /* //// */
